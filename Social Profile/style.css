@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  /* font-family: Inter, sans-serif; */
+  color: white;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  align-items: center;
+  background: #141414;
+  background: #141414;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+#card {
+  background: #1f1f1f;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  text-align: center;
+  width: 375px;
+}
+
+.pfp {
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location {
+  color: #c5f82a;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link1 {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px;
+  text-decoration: none;
+  /* transition: .05s ease-in-out; */
+}
+
+.link1:hover {
+  background-color: #c5f82a;
+  color: black;
+  letter-spacing: 2px;
+  transition: all 0.2s linear;
+  font-size: 15px;
+}

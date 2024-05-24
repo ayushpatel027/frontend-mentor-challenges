@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card_container{
+    padding: 1rem 1rem 2.5rem 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.card_container img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+.card_text h3{
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+}
+
+.card_text p{
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+}

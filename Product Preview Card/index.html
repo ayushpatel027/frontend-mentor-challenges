@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        margin: 10rem;
+        background-color: white;
+        width: auto;
+        height: auto;
+        border-radius: 0.5rem;
+        display: flex;
+      }
+
+      .container img {
+        width: 300px;
+        height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+      }
+
+      .innercontainer {
+        padding: 23px;
+        width: 280px;
+      }
+
+      h1 {
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: hsl(212, 21%, 14%);
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: hsl(228, 12%, 48%);
+      }
+
+      .title {
+        letter-spacing: 5px;
+      }
+
+      table{
+        border-spacing: 13px;
+      }
+
+      .td1 {
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+      }
+
+      .td2{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: hsl(228, 12%, 48%);
+        text-decoration-line: line-through;
+      }
+
+      .box {
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        margin-top: 13px;
+      }
+
+      .box p {
+        color: white;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/image-product-desktop.jpg" alt="" />
+
+      <div class="innercontainer">
+        <p class="title">PERFUME</p>
+        <br />
+
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <br />
+
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <br />
+
+        <table>
+          <tr>
+            <td class="td1">$149.99</td>
+            <td class="td2">$169.99</td>
+          </tr>
+        </table>
+
+        <div class="box">
+          <p>Add to Cart</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ayush</a>.
+    </div>
+  </body>
+</html>
