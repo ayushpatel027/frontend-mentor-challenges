@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* position: relative; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: transparent;
+  border-radius: 10px;
+  height: 400px;
+  width: 790px;
+  display: flex;
+  overflow: hidden;
+}
+
+.container div {
+  padding: 40px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 27px;
+  font-size: 35px;
+}
+
+p,
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 270;
+  font-style: normal;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 27px;
+}
+
+button {
+  margin-top: 60px;
+  width: 120px;
+  height: 35px;
+  border: transparent;
+  border-radius: 20px;
+  justify-items: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.btn:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  /* padding: 20px; */
+  color: white;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sedans > button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs > button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury > button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 800px) {
+  body {
+    height: 1500px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    border-radius: 10px;
+    height: 1200px;
+    width: 80vw;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .container div {
+    width: auto;
+    height: 900px;
+    overflow: auto;
+  }
+}
