@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  height: 60%;
+  width: 70%;
+  border: 1px solid black;
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.info-container .main-title {
+  padding: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.main-title span{
+  font-weight: 600;
+  color: hsl(277, 64%, 61%);
+}
+
+.info-container .main-p {
+  padding: 0.3rem 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.status {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.digits {
+  display: flex;
+  gap: 65px;
+  font-size: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+}
+
+.digits h1{
+  font-weight: 700;
+}
+
+.titles {
+  display: flex;
+  gap: 43px;
+  font-size: 12px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image {
+  width: 50%;
+  background-color: hsl(277, 64%, 61%);
+}
+
+.img1 {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: hsl(277, 64%, 61%);
+}
+
+
+
+@media (max-width: 982px){
+
+  body{
+    margin: 3rem;
+    height: auto;
+    width: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info-container, .image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-title{
+    font-size: 2.5rem;
+  }
+
+  .digits h1{
+    font-size: 2rem;
+  }
+
+  .titles{
+    display: flex;
+    gap: 3rem;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 691px) {
+  body{
+    margin: 3rem;
+  }
+  .container{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info-container, .image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-title{
+    font-size: 2rem;
+  }
+
+  .digits{
+    gap: 2rem;
+  }
+
+  .digits h1{
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+
+  .titles{
+    font-size: 0.6rem;
+    gap: 1.1rem;
+    font-weight: 800;
+  }
+  
+  
+}
